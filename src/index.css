@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #0B2D5C;
+    --color-royal: #1769D2;
+    --color-ice: #EAF4FF;
+    --color-canvas: #FFFFFF;
+    --color-surface: #F6F8FB;
+    --color-ink: #172B4D;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: "Manrope", "Noto Sans Bengali", "Hind Siliguri", system-ui, -apple-system, sans-serif;
+    color: #172B4D;
+    background-color: #FFFFFF;
+  }
+
+  html[lang="bn"] {
+    font-family: "Hind Siliguri", "Noto Sans Bengali", "Manrope", system-ui, sans-serif;
+    line-height: 1.72;
+  }
+
+  html[lang="bn"] h1,
+  html[lang="bn"] h2,
+  html[lang="bn"] h3,
+  html[lang="bn"] h4 {
+    font-family: "Hind Siliguri", "Manrope", sans-serif;
+    line-height: 1.32;
+  }
+
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
+
+.font-num,
+.tabular-nums,
+html[lang="bn"] .tabular-nums,
+html[lang="bn"] input[type="tel"],
+html[lang="bn"] input[type="date"],
+html[lang="bn"] time {
+  font-family: "Manrope", "Noto Sans Bengali", system-ui, -apple-system, sans-serif;
+  font-variant-numeric: tabular-nums;
+}
